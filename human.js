@@ -3,31 +3,31 @@ function display(content){
 }
 
 // define functions
-name(){
-    return "Hi, my name is " + this.name + ".";
+function name(name){
+    return "Hi, my name is " + name + ".";
 }
 
-age(){
-    return "My age is " + this.age + ".";
+function age(age){
+    return "My age is " + age + ".";
 }
 
-gender(){
-    return "My gender is " + this.gender + ".";
+function gender(gender){
+    return "My gender is " + gender + ".";
 }
 
-hobby(){
-    return "My hobby is " + this.hobby + ".";
+function hobby(hobby){
+    return "My hobby is " + hobby + ".";
 }
 
-talent(){
-    return "My talent is " + this.talent + ".";
+function talent(talent){
+    return "My talent is " + talent + ".";
 }
 
-height(){
-    return "My height is " + this.height + ".";
+function height(height){
+    return "My height is " + height + ".";
 }
 
-weight(){
+function weight(weight){
     return "My weight is " + this.height + ".";
 }
 //define parent
@@ -72,13 +72,13 @@ class Parent {
 
 // child class
 // instantiate yourself from the child class
-class Me extends Parent {
+class Noah extends Parent {
     constructor(name, age, gender, hobby, talent, height, weight){
         super(name, age, gender, hobby, talent, height, weight)
     }
     combo(){
         return 
-        "Hi my name is "+name+" I am "+age+" I am a "+gender+", my Hobby is "+hobby+", my talent is "+talent+", my height is "+height+
+        "Hi my name is " + super.name() + " I am " + super.age() + " I am a " + super.gender() + ", my Hobby is " + super.hobby() + ", my talent is " + super.talent() + ", my height is " + super.height() + "."
         
     }
 }
