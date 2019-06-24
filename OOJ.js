@@ -110,3 +110,9 @@ class UchihaGod extends GodNinja{
 }
 let itachi = new UchihaGod("itachi", "Magenko", "Fire", "Upside Down Knife Throw");
 
+
+
+
+display(itachi.village);
+display(itachi.name);
+display(itachi.combo);
