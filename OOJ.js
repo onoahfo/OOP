@@ -91,12 +91,22 @@ class GodNinja {
 
 // OOP Inheritance objects inheriting properties and methods from the classes
 // they were instantiated from
-let itachi = new GodNinja("itachi", "Magenko", "Fire", "Upside Down Knife Throw");
+// let itachi = new GodNinja("itachi", "Magenko", "Fire", "Upside Down Knife Throw");
 
-display(itachi.name());
-display(itachi.ability());
-display(itachi.style());
-display(itachi.move());
+// display(itachi.name());
+// display(itachi.ability());
+// display(itachi.style());
+// display(itachi.move());
 
-
+// OOP polymorphism
+class UchihaGod extends GodNinja{
+    constructor(name, ability, style, move){
+        super(name, ability, style, move)
+        this.village = "Hidden Leaf";
+    }
+    combo(){
+        return "Activate: " + super.ability() + " Combo with " + super.move() + "."
+    }
+}
+let itachi = new UchihaGod("itachi", "Magenko", "Fire", "Upside Down Knife Throw");
 
